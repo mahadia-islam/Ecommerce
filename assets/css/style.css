@@ -325,7 +325,7 @@ img {
 }
 
 .featured .featured__containar .featured__product .featured__data .featured__name {
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-2);
   text-transform: uppercase;
   margin-top: var(--mb-1);
   font-size: var(--primary-font-size);
@@ -430,5 +430,172 @@ img {
 
 .newsletter .newsletter__container .newsletter__form .button {
   font-size: var(--small-font-size);
+}
+
+.sponsers .sponsers__container {
+  -ms-grid-columns: repeat 2, 1fr;
+      grid-template-columns: repeat 2, 1fr;
+  row-gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+.sponsers .sponsers__container .sponsers__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sponsers .sponsers__container .sponsers__logo img {
+  width: 80px;
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
+}
+
+.sponsers .sponsers__container .sponsers__logo img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.footer {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+}
+
+.footer .footer__container {
+  row-gap: 1.5rem;
+  margin-bottom: var(--mb-4);
+}
+
+.footer .footer__container .footer__title {
+  margin-bottom: var(--mb-1);
+}
+
+.footer .footer__container .footer__deal {
+  margin-bottom: var(--mb-2);
+}
+
+.footer .footer__container .footer__store {
+  width: 100px;
+}
+
+.footer .footer__container .footer__link {
+  color: var(--dark-color-light);
+}
+
+.footer .footer__container .footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer .footer__container .footer__social i {
+  color: var(--dark-color-light);
+  font-size: 1.5rem;
+  margin-right: var(--mb-1);
+}
+
+.footer .footer__copy {
+  border-top: 1px solid var(--dark-color-light);
+  padding-top: 3rem;
+  text-align: center;
+  color: var(--dark-color-light);
+  font-size: var(--small-font-size);
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .section-all {
+    margin-bottom: var(--mb-4);
+  }
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+  .nav .nav__menu {
+    margin-left: auto;
+  }
+  .nav .nav__menu .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav .nav__menu .nav__list .nav__item {
+    margin-left: var(--mb-4);
+    margin-bottom: 0;
+  }
+  .nav .nav__toggle {
+    display: none;
+  }
+  .home .home__container {
+    height: 100vh;
+  }
+  .home .home__container .home__data {
+    padding: 0;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .home .home__container .home__data .home__title {
+    line-height: .8;
+    letter-spacing: 1.5rem;
+  }
+  .home .home__container .home__img {
+    width: 370px;
+  }
+  .collection .collection__container {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    -ms-grid-rows: 1fr !important;
+        grid-template-rows: 1fr !important;
+  }
+  .collection .collection__container .collection__box {
+    padding: .5rem 3rem 0;
+  }
+  .collection .collection__container .collection__img {
+    width: 130px;
+  }
+  .featured .featured__containar {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .sponsers__container, .footer__container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .offer__data {
+    padding: 5rem 0;
+  }
+  .new .new__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .newsletter__form {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .footer__container {
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__data {
+    padding-left: 7rem;
+  }
+  .home__img {
+    right: 15% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
